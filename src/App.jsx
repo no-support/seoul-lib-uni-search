@@ -1,24 +1,16 @@
 import '@/App.css';
-import Main from '@/component/Main';
-import Header from '@/component/Header';
 import { useState } from 'react';
 
-function App() {
-  const [src, setSrc] = useState(
-    'https://library.gangnam.go.kr/intro/index.do'
-  );
-  const mode = 1;
+import MemoizedForm from './MemoizedForm';
+import Tab from './Tab';
 
-  return mode ? (
-    <>
-      <Header setSrc={setSrc} />
-      <Main src={src} />
-    </>
-  ) : (
-    <div className="bg-blue-300">
-      <iframe src="/foo" className="w-full aspect-video"></iframe>
+export default function App() {
+  const [data, setData] = useState();
+
+  return (
+    <div>
+      <MemoizedForm setData={setData} />
+      <Tab data={data} />
     </div>
   );
 }
-
-export default App;

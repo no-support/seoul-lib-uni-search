@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* classname define bg-primary as blue */
+.bg-primary {
+  --tw-bg-opacity: 0.1;
+  background-color: rgba(0, 0, 255, var(--tw-bg-opacity));
+}
