@@ -1,6 +1,6 @@
-## Notice
+## 실행 화면
 
-#### url: https://no-support.github.io/seoul-lib-uni-search/
+![Honeycam 2024-08-04 21-47-21](https://github.com/user-attachments/assets/9f1fb87b-9875-4a3d-80bd-77f605dcd663)
 
 #### 로컬에서 구동 방법:
 
@@ -32,3 +32,4 @@
   - 응답 데이터의 내용들이 달라 통일되면서도 편한 기능 구현과 UI/UX 개선점, 리팩토링에 대해 고민해야 하는 것이 과제로 남아있음.
     - 검색의 범위를 단행본으로 줄이고, 키워드 검색 방식에서 도서 ISBN 번호로 검색하여 해당 ISBN에 대해 모든 자치구의 비치 여부(+대출 가능 여부)를 보여주는 UI가 더 낫겠다는 생각을 하고 있음.
     - Tab 메뉴 컴포넌트 코드와 도서 데이터 요청을 보내는 코드에서 비슷한 부분이 반복되고 있어 리팩토링 대상임
+  - 배포 환경에서는 vite proxy가 동작하지 않음. 현재 로컬 환경에서만 구동 가능(.github/workflows/deploy.yml 삭제)
